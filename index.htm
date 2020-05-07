@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     <title>Document</title>
 </head>
 
 <body>
-    <br><br>
-    <form onsubmit="getword();return false;">
-        <input type="number" name="number" placeholder="Enter number" id="number" min="0" max="9999999" style="width: 150px; height: 20px;">
-        <input type="submit" value="Get In Words" style="width: 150px; height: 30px; border: none;">
-    </form>
-    <br><br><br>
-    <div class="display" id="display" style="font-size: 50px; font-family: sans-serif;">
 
+    <div class="container">
+        <div class="p-3 mb-2 bg-dark text-white text-center container-fluid">
+
+            <h1>Number To Word Convertor</h1>
+        </div>
+        <br><br><br><br>
+
+        <div class="input-group mb-3 " style="width: 70%;margin-left: 12%;">
+            <input type="number" id="number" min="0" max="9999999" class="form-control border border-dark" placeholder="Enter Number to be displayed" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn  btn btn-dark" type="button" id="button-addon2" onclick="getword()">&emsp;&emsp;Get Word&emsp;&emsp;</button>
+            </div>
+        </div>
+
+        <br><br><br>
+        <div class="display text-center container-fluid" id="display" style="font-size: 50px; font-family: sans-serif;">
+
+        </div>
     </div>
+
 
     <script src="index.js">
     </script>

@@ -1,13 +1,18 @@
 var places = [
-    ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'],
-    ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'],
-    ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'],
-    ['hundred', 'thousand', 'lakh']
+    ['zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'],
+    ['Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'],
+    ['Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'],
+    ['Hundred', 'Thousand', 'Lakh']
 ];
 
 function getword() {
 
     var display = document.getElementById("display");
+    display.classList.add("p-3");
+    display.classList.add("mb-2");
+    display.classList.add("bg-dark");
+    display.classList.add("text-white");
+
     var num = document.getElementById("number").value;
     // var num = 0;
     console.log(num);
